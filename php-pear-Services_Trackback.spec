@@ -8,7 +8,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - a generic class for sending and receiving trackbacks
-Summary(pl):	%{_pearname} - podstawowa klasa do wysy³ania i odbierania trackback
+Summary(pl):	%{_pearname} - podstawowa klasa do wysy³ania i odbierania trackbacków
 Name:		php-pear-%{_pearname}
 Version:	0.4.0
 Release:	1
@@ -28,7 +28,7 @@ A generic class for sending and receiving trackbacks.
 In PEAR status of this package is: %{_status}.
 
 %description -l pl
-Podstawowa klasa do wysy³ania i odibierania trackback.
+Podstawowa klasa do wysy³ania i odbierania trackbacków.
 
 Ta klasa ma w PEAR status: %{_status}.
 
