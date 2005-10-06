@@ -10,12 +10,12 @@
 Summary:	%{_pearname} - a generic class for sending and receiving trackbacks
 Summary(pl):	%{_pearname} - podstawowa klasa do wysy³ania i odbierania trackbacków
 Name:		php-pear-%{_pearname}
-Version:	0.4.0
-Release:	2
+Version:	0.5.0
+Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	56ae320f9a32466c797ca15666748366
+# Source0-md5:	303b764079119f45273c911cac6333b5
 URL:		http://pear.php.net/package/Services_Trackback/
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-pear
@@ -62,6 +62,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc install.log
 %{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/%{_class}/*.php
+%{php_pear_dir}/%{_class}/%{_subclass}
 
 %files tests
 %defattr(644,root,root,755)
