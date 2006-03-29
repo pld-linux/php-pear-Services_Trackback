@@ -11,7 +11,7 @@ Summary:	%{_pearname} - a generic class for sending and receiving trackbacks
 Summary(pl):	%{_pearname} - podstawowa klasa do wysy³ania i odbierania trackbacków
 Name:		php-pear-%{_pearname}
 Version:	0.5.0
-Release:	1
+Release:	2
 Epoch:		0
 License:	PHP 2.02
 Group:		Development/Languages/PHP
