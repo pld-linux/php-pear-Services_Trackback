@@ -4,19 +4,19 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		Services
 %define		_subclass	Trackback
-%define		_status		alpha
+%define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - a generic class for sending and receiving trackbacks
 Summary(pl):	%{_pearname} - podstawowa klasa do wysy³ania i odbierania trackbacków
 Name:		php-pear-%{_pearname}
-Version:	0.5.0
-Release:	2
+Version:	0.6.1
+Release:	1
 Epoch:		0
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	303b764079119f45273c911cac6333b5
+# Source0-md5:	3f4fc34ac57ab8a8c94b6df22690d58e
 URL:		http://pear.php.net/package/Services_Trackback/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
