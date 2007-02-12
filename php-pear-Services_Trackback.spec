@@ -8,7 +8,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - a generic class for sending and receiving trackbacks
-Summary(pl.UTF-8):   %{_pearname} - podstawowa klasa do wysyłania i odbierania trackbacków
+Summary(pl.UTF-8):	%{_pearname} - podstawowa klasa do wysyłania i odbierania trackbacków
 Name:		php-pear-%{_pearname}
 Version:	0.6.1
 Release:	1
@@ -38,7 +38,7 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 AutoReq:	no
