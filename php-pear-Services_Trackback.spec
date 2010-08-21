@@ -6,23 +6,23 @@
 %define		_subclass	Trackback
 %define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
-
 Summary:	%{_pearname} - a generic class for sending and receiving trackbacks
 Summary(pl.UTF-8):	%{_pearname} - podstawowa klasa do wysyłania i odbierania trackbacków
 Name:		php-pear-%{_pearname}
 Version:	0.6.2
-Release:	1
-Epoch:		0
+Release:	2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	a59cfa706b47468dff510c78cd1b9dbe
 URL:		http://pear.php.net/package/Services_Trackback/
-BuildRequires:	php-pear-PEAR
+BuildRequires:	php-pear-PEAR >= 1:1.4.0-0.b1
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	php-pear
 Requires:	php-pear-HTTP_Request >= 1.2.4
+Requires:	php-pear-Net_DNSBL
+Requires:	php-pear-Var_Dump
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -40,9 +40,9 @@ Ta klasa ma w PEAR status: %{_status}.
 Summary:	Tests for PEAR::%{_pearname}
 Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
-Requires:	%{name} = %{epoch}:%{version}-%{release}
-AutoReq:	no
+Requires:	%{name} = %{version}-%{release}
 AutoProv:	no
+AutoReq:	no
 
 %description tests
 Tests for PEAR::%{_pearname}.
