@@ -23,6 +23,7 @@ Requires:	php-pear
 Requires:	php-pear-HTTP_Request >= 1.2.4
 Requires:	php-pear-Net_DNSBL
 Requires:	php-pear-Var_Dump
+Obsoletes:	php-pear-Services_Trackback-tests
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -35,20 +36,6 @@ In PEAR status of this package is: %{_status}.
 Podstawowa klasa do wysyłania i odbierania trackbacków.
 
 Ta klasa ma w PEAR status: %{_status}.
-
-%package tests
-Summary:	Tests for PEAR::%{_pearname}
-Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
-Group:		Development/Languages/PHP
-Requires:	%{name} = %{version}-%{release}
-AutoProv:	no
-AutoReq:	no
-
-%description tests
-Tests for PEAR::%{_pearname}.
-
-%description tests -l pl.UTF-8
-Testy dla PEAR::%{_pearname}.
 
 %prep
 %pear_package_setup
@@ -67,7 +54,3 @@ rm -rf $RPM_BUILD_ROOT
 %{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/%{_class}/*.php
 %{php_pear_dir}/%{_class}/%{_subclass}
-
-%files tests
-%defattr(644,root,root,755)
-%{php_pear_dir}/tests/*
