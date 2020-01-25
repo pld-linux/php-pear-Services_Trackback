@@ -5,7 +5,6 @@
 %define		_subclass	Trackback
 %define		_status		beta
 %define		_pearname	Services_Trackback
-%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - a generic class for sending and receiving trackbacks
 Summary(pl.UTF-8):	%{_pearname} - podstawowa klasa do wysyłania i odbierania trackbacków
 Name:		php-pear-%{_pearname}
